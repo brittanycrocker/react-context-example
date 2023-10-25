@@ -36,7 +36,12 @@ const Menu = () => {
       </div>
       <div>
         <label htmlFor="burgers">Burgers</label>
-        <input type="number" name="burgers" onChange={handleChange} />
+        <input
+          type="number"
+          name="burgers"
+          value={internalItems?.["burgers"] ?? 0}
+          onChange={handleChange}
+        />
       </div>
       <button type="submit">Submit</button>
     </form>
