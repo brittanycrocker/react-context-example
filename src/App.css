@@ -1,0 +1,28 @@
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header header nav"
+    "main main main";
+  grid-template-columns: 150px 1fr;
+}
+
+.layout > header {
+  grid-area: header;
+  background-color: #8ca0ff;
+}
+
+.layout > nav {
+  grid-area: nav;
+  background-color: #ffa08c;
+  width: 300px;
+}
+
+.layout > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
